@@ -12,7 +12,6 @@
 		"build": "vue-cli-service build --target lib --name DataTable src/main.js"
 	},
 	"main": "dist/DataTable.umd.js",
-	"unpkg": "dist/DataTable.umd.min.js",
 	"keywords": [
 		"vue",
 		"table",
