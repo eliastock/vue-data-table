@@ -1,7 +1,7 @@
 <template>
 	<div class="data-table-table">
 		<table :class="tableClass">
-			<thead>
+			<thead :class="fieldClass">
 				<tr>
 					<th
 						v-for="(column, i) in columns"
@@ -31,15 +31,15 @@
 						{{ emptyTableText }}
 					</td>
 				</tr>
-				<tr v-for="(data, i) in dataDisplayed" :key="i">
-					<td v-for="(column, j) in columns" :key="j">
+				<tr v-for="(data, i) in dataDisplayed" :key="i" >
+					<td v-for="(column, j) in columns" :key="j" :class="column.field">
 						<component
 							v-if="column.component"
 							:is="column.component"
 							:data="data"
 							:column="column"
 						/>
-						<span v-else :class="column.fieldClass">{{ data[column.key] }}</span>
+						<span v-else :class="column.field">{{ data[column.key] }}</span>
 					</td>
 				</tr>
 			</tbody>
