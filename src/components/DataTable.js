@@ -342,7 +342,7 @@ export default {
 				sortingIconComponent: this.sortingIconComponent,
 				sortingIndexComponent: this.sortingIndexComponent,
 				tableClass: this.tableClass,
-				fieldClass: this.fieldClass
+				customClass: this.customClass
 			};
 		},
 
@@ -671,7 +671,7 @@ export default {
 			type: String,
 			default: "table table-striped table-hover"
 		},
-		fieldClass: {
+		customClass: {
 			type: String
 		},
 		text: {

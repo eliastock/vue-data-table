@@ -1,7 +1,7 @@
 <template>
 	<div class="data-table-table tests">
 		<table :class="tableClass">
-			<thead :class="fieldClass">
+			<thead>
 				<tr>
 					<th
 						v-for="(column, i) in columns"
@@ -39,7 +39,7 @@
 							:data="data"
 							:column="column"
 						/>
-						<span v-else :class="column.field">{{ data[column.key] }}</span>
+						<span v-else :class="column.fieldClass">{{ data[column.key] }}</span>
 					</td>
 				</tr>
 			</tbody>
