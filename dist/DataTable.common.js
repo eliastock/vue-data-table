@@ -6455,7 +6455,8 @@ function parser_parseTextProps(props) {
         numberOfColumns: this.numberOfColumns,
         sortingIconComponent: this.sortingIconComponent,
         sortingIndexComponent: this.sortingIndexComponent,
-        tableClass: this.tableClass
+        tableClass: this.tableClass,
+        fieldClass: this.fieldClass
       };
     },
 

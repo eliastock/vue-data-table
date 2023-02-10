@@ -342,6 +342,7 @@ export default {
 				sortingIconComponent: this.sortingIconComponent,
 				sortingIndexComponent: this.sortingIndexComponent,
 				tableClass: this.tableClass,
+				fieldClass: this.fieldClass
 			};
 		},
 
