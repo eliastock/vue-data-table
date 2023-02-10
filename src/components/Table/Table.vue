@@ -1,5 +1,5 @@
 <template>
-	<div class="data-table-table tests">
+	<div class="data-table-table">
 		<table :class="tableClass">
 			<thead>
 				<tr>
@@ -32,14 +32,14 @@
 					</td>
 				</tr>
 				<tr v-for="(data, i) in dataDisplayed" :key="i" >
-					<td v-for="(column, j) in columns" :key="j" :class="column.field">
+					<td v-for="(column, j) in columns" :key="j" :class="column.columnClass">
 						<component
 							v-if="column.component"
 							:is="column.component"
 							:data="data"
 							:column="column"
 						/>
-						<span v-else :class="column.fieldClass">{{ data[column.key] }}</span>
+						<span v-else>{{ data[column.key] }}</span>
 					</td>
 				</tr>
 			</tbody>
