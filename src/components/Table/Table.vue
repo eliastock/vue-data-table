@@ -1,5 +1,5 @@
 <template>
-	<div class="data-table-table">
+	<div class="data-table-table test">
 		<table :class="tableClass">
 			<thead :class="fieldClass">
 				<tr>
