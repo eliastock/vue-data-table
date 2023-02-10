@@ -16,7 +16,7 @@ export default {
 		sortingIconComponent: Object,
 		sortingIndexComponent: Object,
 	},
-	computed: {
+	methods: {
 		formatData(format, data) {
 		  switch (format) {
 			case "currency":
