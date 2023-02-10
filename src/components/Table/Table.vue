@@ -39,7 +39,7 @@
 							:data="data"
 							:column="column"
 						/>
-						<span v-else>{{ data[column.key] }}</span>
+						<span v-else>{{ formatData(column.format, data[column.key]) }}</span>
 					</td>
 				</tr>
 			</tbody>
