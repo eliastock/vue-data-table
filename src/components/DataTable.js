@@ -671,6 +671,9 @@ export default {
 			type: String,
 			default: "table table-striped table-hover"
 		},
+		fieldClass: {
+			type: String
+		},
 		text: {
 			type: Object,
 			required: false

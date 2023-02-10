@@ -5683,6 +5683,7 @@ var Tablevue_type_template_id_cf4eac9e_staticRenderFns = []
   name: "DataTableTable",
   props: {
     tableClass: String,
+    fieldClass: String,
     columns: Array,
     data: Array,
     dataDisplayed: Array,
@@ -6802,6 +6803,9 @@ function parser_parseTextProps(props) {
     tableClass: {
       type: String,
       default: "table table-striped table-hover"
+    },
+    fieldClass: {
+      type: String,
     },
     text: {
       type: Object,
