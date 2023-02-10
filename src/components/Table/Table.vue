@@ -1,7 +1,7 @@
 <template>
 	<div class="data-table-table">
 		<table :class="tableClass">
-			<thead>
+			<thead :class="fieldClass">
 				<tr>
 					<th
 						v-for="(column, i) in columns"
@@ -43,7 +43,7 @@
 					</td>
 				</tr>
 			</tbody>
-			<component v-if="isLoading" :is="loadingComponent">
+			<component v-if="isLoading" :is="loadingComponent"/>
 			<component
 				v-if="footerComponent !== null" :is="footerComponent"
 				v-bind="{ data, dataDisplayed, dataFiltered }"
