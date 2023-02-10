@@ -15,5 +15,5 @@ export default {
 		numberOfColumns: Number,
 		sortingIconComponent: Object,
 		sortingIndexComponent: Object,
-	},
+	}
 };

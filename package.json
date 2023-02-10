@@ -1,31 +1,62 @@
 {
-	"name": "@andresouzaabreu/vue-data-table",
-	"version": "3.3.3",
-	"private": false,
-	"author": "André Souza Abreu",
-	"description": "A Vue plugin that adds advanced features to an HTML table",
-	"repository": "https://github.com/AndreSouzaAbreu/vue-data-table",
-	"bugs": "https://github.com/AndreSouzaAbreu/vue-data-table/issues",
-	"license": "MIT",
-	"scripts": {
-		"serve": "vue-cli-service serve",
-		"build": "vue-cli-service build --target lib --name DataTable src/main.js"
-	},
-	"main": "dist/DataTable.umd.js",
-	"keywords": [
-		"vue",
-		"table",
-		"data"
-	],
-	"dependencies": {
-		"export-from-json": "1.4.0",
-		"vue": "2.6.14"
-	},
-	"devDependencies": {
-		"@vue/cli-plugin-babel": "4.5.13",
-		"@vue/cli-service": "4.5.13",
-		"node-sass": "6.0.1",
-		"sass-loader": "10.2.0",
-		"vue-template-compiler": "2.6.14"
-	}
+  "_from": "git+https://github.com/eliastock/vue-data-table.git",
+  "_id": "@andresouzaabreu/vue-data-table@3.3.3",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/@andresouzaabreu/vue-data-table",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/eliastock/vue-data-table.git",
+    "rawSpec": "git+https://github.com/eliastock/vue-data-table.git",
+    "saveSpec": "git+https://github.com/eliastock/vue-data-table.git",
+    "fetchSpec": "https://github.com/eliastock/vue-data-table.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/eliastock/vue-data-table.git#1b0102c3999a7cd10f723453cfcb6633a456efaf",
+  "_spec": "git+https://github.com/eliastock/vue-data-table.git",
+  "_where": "C:\\Users\\alexf\\Desktop\\storecockpit-frontend-latest",
+  "author": {
+    "name": "André Souza Abreu"
+  },
+  "bugs": {
+    "url": "https://github.com/AndreSouzaAbreu/vue-data-table/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "export-from-json": "1.4.0",
+    "vue": "2.6.14"
+  },
+  "deprecated": false,
+  "description": "A Vue plugin that adds advanced features to an HTML table",
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "4.5.13",
+    "@vue/cli-service": "4.5.13",
+    "node-sass": "6.0.1",
+    "sass-loader": "10.2.0",
+    "vue-template-compiler": "2.6.14"
+  },
+  "homepage": "https://github.com/AndreSouzaAbreu/vue-data-table#readme",
+  "keywords": [
+    "vue",
+    "table",
+    "data"
+  ],
+  "license": "MIT",
+  "main": "src/main.js",
+  "name": "@andresouzaabreu/vue-data-table",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreSouzaAbreu/vue-data-table.git"
+  },
+  "scripts": {
+    "build": "vue-cli-service build --target lib --name DataTable src/main.js",
+    "serve": "vue-cli-service serve"
+  },
+  "version": "3.3.3"
 }
