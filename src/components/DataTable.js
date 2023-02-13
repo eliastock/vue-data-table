@@ -65,7 +65,10 @@ export default {
 			// item to appear
 			const end = lastEntry;
 			const start = Math.max(0, firstEntry - 1);
-			return dataSorted.slice(start, end);
+			if (lastEntry) {
+				return dataSorted.slice(start, end);
+			}
+			return [];
 		},
 
 		/**
@@ -588,7 +591,7 @@ export default {
 			required: false
 		},
 		data: {
-			type: Array,
+			type: [Array, Object],
 			required: true
 		},
 		defaultColumn: {

@@ -12,7 +12,8 @@ export default {
 			exportFromJSON({
 				data: this.data,
 				fileName: this.downloadFileName,
-				exportType: this.selectedExport
+				exportType: this.selectedExport,
+				delimiter: ";",
 			});
 		}
 	},
